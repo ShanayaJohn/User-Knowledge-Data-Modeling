@@ -23,7 +23,7 @@ scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
 
-#Source: demoUnit7.py from lectures
+
 # PCA analysis - reducing to 2 principal components
 pca = PCA(n_components=2) 
 reducedData = pca.fit_transform(X_scaled) #Applying transformation to the standarded data
@@ -39,7 +39,6 @@ plt.show()
 
 #Part 3: Clustering the data
 
-#Source code:https://www.w3schools.com/python/python_ml_k-means.asp
 #Elbow Method used to determine the optimal number of clusters
 inertia = []
 
